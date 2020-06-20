@@ -1,0 +1,12 @@
+{
+    "name": "Instagram Video Downloader",
+    "version": "1.0",
+    "description": "Baixe vídeos privados ou públicos do Instagram com alguns cliques.",
+    "manifest_version": 2,
+    "icons": {
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "autor": "Salmo Mascarenhas - https://github.com/salmomascarenhas"
+}
