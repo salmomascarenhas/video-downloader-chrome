@@ -3,10 +3,23 @@
     "version": "1.0",
     "description": "Baixe vídeos privados ou públicos do Instagram com alguns cliques.",
     "manifest_version": 2,
+    "autor": "Salmo Mascarenhas - https://github.com/salmomascarenhas",
+    "permissions": [
+        "tabs",
+        "webRequest",
+        "*://*instagram.*"
+    ],
     "icons": {
-        "32": "icon32.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
     },
-    "autor": "Salmo Mascarenhas - https://github.com/salmomascarenhas"
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "background": {
+        "scripts": [
+            "scripts/background_script.js"
+        ]
+    }
 }
