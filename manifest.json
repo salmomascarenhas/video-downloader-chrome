@@ -2,24 +2,35 @@
     "name": "Instagram Video Downloader",
     "version": "1.0",
     "description": "Baixe vídeos privados ou públicos do Instagram com alguns cliques.",
-    "manifest_version": 2,
     "autor": "Salmo Mascarenhas - https://github.com/salmomascarenhas",
-    "permissions": [
-        "tabs",
-        "webRequest",
-        "*://*instagram.*"
-    ],
+    "manifest_version": 2,
     "icons": {
         "32": "images/icon32.png",
         "48": "images/icon48.png",
         "128": "images/icon128.png"
     },
+    "background": {
+        "scripts": [
+            "scripts/background.js"
+        ]
+    },
     "browser_action": {
         "default_popup": "index.html"
     },
-    "background": {
-        "scripts": [
-            "scripts/background_script.js"
-        ]
-    }
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/app.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "webRequest",
+        "activeTab",
+        "tabs",
+        "<all_urls>"
+    ]
 }
