@@ -1,5 +1,5 @@
 # video-downloader-chrome
-An extension for google chrome to download videos from Instagram website.
+📹⏬ An extension for google chrome to download videos from Instagram website.
 
 
 ### How to use
@@ -23,7 +23,7 @@ When playing any instagram video (or similar requests), the extension will captu
 
 Taking the data to the "closest" and visible to the user, which is the popup.html.
 
-To show with a ```sh alert();``` all the urls captureds, click on the icon.
+To show with a ```alert();``` all the urls captureds, click on the icon.
 
 Read more about how chrome extensions work in the [documentation](https://developer.chrome.com/extensions/overview).
 
