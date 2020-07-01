@@ -5,7 +5,7 @@ An extension for google chrome to download videos from Instagram website.
 ### How to use
 video-downloader-chrome requires [Chrome](https://www.google.com/intl/pt-BR/chrome/) to run.
 
-Clone the repository and run on Chrome
+Clone the repository and run on Chrome.
 
 ```sh
 $ git clone https://github.com/salmomascarenhas/video-downloader-chrome.git
@@ -23,7 +23,13 @@ When playing any instagram video (or similar requests), the extension will captu
 
 Taking the data to the "closest" and visible to the user, which is the popup.html.
 
+To show with a ```sh alert();``` all the urls captureds, click on the icon.
+
 Read more about how chrome extensions work in the [documentation](https://developer.chrome.com/extensions/overview).
+
+### Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/salmomascarenhas/video-downloader-chrome.
 
 ### Todos
 
