@@ -17,10 +17,10 @@ function anyfunction(request) {
     if (request.from === 'content' && request.subject === 'dataRequested') {
         const container = document.querySelector('.container');
         data = request.data;
-        console.log('dados armazenados no popup com sucesso!');
 
-        if (data.lenght) {
-
+        if (!data) {
+            container.innerHTML =
+                `<h2></h2>`
         }
         data.forEach((element, index) => {
             container.innerHTML +=
