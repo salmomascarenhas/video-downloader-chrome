@@ -1,7 +1,7 @@
-const data = []
+const data = [];
 
 function handleResponseContent() {
-    console.log('enviando dados para o content...')
+    console.log('enviando dados para o content...');
     chrome.tabs.query({
         active: true,
         currentWindow: true
@@ -23,9 +23,9 @@ chrome.webRequest.onBeforeRequest.addListener(function (e) {
     if (url) {
         data.push(url);
 
-        const videoLinksAmount = data.length.toString()
+        const videoLinksAmount = data.length.toString();
 
-        renderVideoCounter(videoLinksAmount)
+        renderVideoCounter(videoLinksAmount);
         handleResponseContent();
     }
 

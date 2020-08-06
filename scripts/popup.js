@@ -19,8 +19,9 @@ function anyfunction(request) {
         data = request.data;
 
         if (!data) {
-            container.innerHTML =
-                `<h2></h2>`
+            console.log('sem data');
+            container.innerHTML +=
+                `<h2>TESTE</h2>`
         }
         data.forEach((element, index) => {
             container.innerHTML +=

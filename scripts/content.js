@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener((request, sender, response) => {
         case 'background':
             if (request.subject === 'storeData' && request.data) {
                 data = request.data;
-                console.log('armazenado no content com sucesso!')
+                console.log('armazenado no content com sucesso!');
             }
             break;
         case 'popup':
